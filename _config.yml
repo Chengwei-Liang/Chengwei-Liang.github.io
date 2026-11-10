@@ -23,7 +23,7 @@ repository               : "Chengwei-Liang/Chengwei-Liang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "me.png"
   name             : "Chengwei Liang"
   pronouns         : "hi/his"  
   bio              : "Astronomy undergraduate"
