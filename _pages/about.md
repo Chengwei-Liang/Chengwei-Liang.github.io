@@ -1,7 +1,9 @@
 ---
 permalink: /
-title: "Welcome"
-author_profile: true
+title: "Welcome!"
+subtitle: "Undergraduate Student · Astronomy"
+layout: home
+author_profile: false
 redirect_from:
   - /about/
   - /about.html

@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% assign author = site.author %}
+
+<div id="main" role="main" class="home-main">
+  <article class="home-page" itemscope itemtype="http://schema.org/Person">
+    <div class="home-page__inner">
+
+      <div class="home-page__text">
+        {% if page.title %}
+          <h1 class="home-page__welcome" itemprop="headline">{{ page.title }}</h1>
+        {% endif %}
+
+        <h2 class="home-page__name" itemprop="name">{{ author.name }}</h2>
+
+        {% if page.subtitle %}
+          <p class="home-page__role" itemprop="jobTitle">{{ page.subtitle }}</p>
+        {% endif %}
+
+        <div class="home-page__intro" itemprop="description">
+          {{ content }}
+        </div>
+
+        <hr class="home-page__divider" />
+
+        <h3 class="home-page__contact-title">Contact &amp; Information</h3>
+
+        <ul class="home-page__contact">
+          {% if author.email %}
+            <li>
+              <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:{{ author.email }}" itemprop="email">{{ author.email }}</a>
+            </li>
+          {% endif %}
+          {% if author.orcid %}
+            <li>
+              <i class="ai ai-orcid" aria-hidden="true"></i>
+              <a href="{{ author.orcid }}" itemprop="sameAs">ORCID</a>
+            </li>
+          {% endif %}
+          {% if author.employer %}
+            <li>
+              <i class="fas fa-fw fa-building-columns" aria-hidden="true"></i>
+              <span itemprop="affiliation">{{ author.employer }}</span>
+            </li>
+          {% endif %}
+          {% if author.location %}
+            <li>
+              <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i>
+              <span itemprop="address">{{ author.location }}</span>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      {% if author.avatar %}
+        <div class="home-page__photo">
+          {% if author.avatar contains "://" %}
+            <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
+          {% else %}
+            <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" fetchpriority="high" />
+          {% endif %}
+        </div>
+      {% endif %}
+
+    </div>
+  </article>
+</div>
