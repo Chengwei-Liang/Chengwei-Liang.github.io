@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <div class="programs">
-  <p class="programs__intro">I lead and contribute to radio observing programs on <strong>FAST</strong> and the <strong>Parkes (Murriyang)</strong> telescope. These programs target the dynamic magneto-ionic environments of repeating fast radio bursts, wideband spectro-polarimetry, and searches for radio transients and long-period pulsars.</p>
+  <p class="programs__intro">I lead and contribute to radio observing programs on <strong>FAST</strong> and <strong>Parkes (Murriyang)</strong>. These programs target the dynamic magneto-ionic environments of repeating fast radio bursts, wideband spectro-polarimetry, and searches for radio transients and pulsars.</p>
 
   <h2 class="programs__telescope">FAST <span class="programs__count">4 programs</span></h2>
 
@@ -57,7 +57,7 @@ author_profile: true
         <span class="program__id">P1328</span>
       </div>
       <h3 class="program__title">Depicting the dynamic environment of FRB 20180301A</h3>
-      <p class="program__details"><span>60 hours</span><span>October 2026</span></p>
+      <p class="program__details"><span>60 hours</span><span>2026OCT</span></p>
     </article>
 
     <article class="program program--pi">
@@ -66,7 +66,7 @@ author_profile: true
         <span class="program__id">PX153 (ToO)</span>
       </div>
       <h3 class="program__title">Follow-up of FRB 20180301A</h3>
-      <p class="program__details"><span>21.5 hours</span><span>April 2026</span></p>
+      <p class="program__details"><span>21.5 hours</span><span>2026APR</span></p>
     </article>
 
     <article class="program program--pi">
@@ -75,7 +75,7 @@ author_profile: true
         <span class="program__id">P1409</span>
       </div>
       <h3 class="program__title">Probing the dynamic magneto-ionic environment of a high-RM repeating fast radio burst</h3>
-      <p class="program__details"><span>24 hours</span><span>April 2026</span></p>
+      <p class="program__details"><span>24 hours</span><span>2026APR</span></p>
     </article>
 
     <article class="program program--co">
@@ -84,7 +84,7 @@ author_profile: true
         <span class="program__id">P1327</span>
       </div>
       <h3 class="program__title">Searching for single pulses from an ultra-long period radio pulsar</h3>
-      <p class="program__details"><span>81.5 hours in total</span><span>April 2025 &ndash; October 2025</span></p>
+      <p class="program__details"><span>81.5 hours in total</span><span>2025APR &ndash; 2025OCT</span></p>
     </article>
 
     <article class="program program--co">
@@ -93,7 +93,7 @@ author_profile: true
         <span class="program__id">P1328</span>
       </div>
       <h3 class="program__title">Studying wideband spectro-polarimetric behaviour of FRB 20180301A</h3>
-      <p class="program__details"><span>71 hours in total</span><span>October 2024 &ndash; October 2025</span></p>
+      <p class="program__details"><span>71 hours in total</span><span>2024OCT &ndash; 2025OCT</span></p>
     </article>
 
     <article class="program program--co">
@@ -102,7 +102,7 @@ author_profile: true
         <span class="program__id">P1281</span>
       </div>
       <h3 class="program__title">Searching for fast radio bursts from a radio source with likely magnetar origin</h3>
-      <p class="program__details"><span>62 hours in total</span><span>April 2023 &ndash; October 2024</span></p>
+      <p class="program__details"><span>62 hours in total</span><span>2023APR &ndash; 2024OCT</span></p>
     </article>
   </div>
 </div>

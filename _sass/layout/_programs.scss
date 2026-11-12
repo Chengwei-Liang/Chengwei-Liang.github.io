@@ -71,9 +71,10 @@
   }
 
   &__id {
-    color: var(--global-text-color-light);
+    color: #33424d;
     font-family: $monospace;
-    font-size: 0.72rem;
+    font-size: 0.85rem;
+    font-weight: 600;
   }
 
   &__title {
@@ -88,7 +89,7 @@
     flex-wrap: wrap;
     gap: 0.25em 1.25em;
     margin: 0;
-    color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    color: #1f7a8c;
+    font-size: 0.80rem;
   }
 }
