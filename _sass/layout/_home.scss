@@ -76,7 +76,7 @@ html[data-theme="dark"] .home-page {
 
 .home-page__intro {
   color: var(--home-body-color);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.7;
 
   p {
@@ -106,7 +106,7 @@ html[data-theme="dark"] .home-page {
 .home-page__contact-title {
   margin: 0 0 0.8em;
   color: var(--home-heading-color);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;
@@ -156,6 +156,10 @@ html[data-theme="dark"] .home-page {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+
+  @include breakpoint($large) {
+    margin-right: 2.5em;
+  }
 
   @include breakpoint($x-large) {
     flex-basis: 42%;
