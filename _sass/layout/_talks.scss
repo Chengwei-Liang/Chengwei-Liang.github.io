@@ -39,6 +39,17 @@
   letter-spacing: 0.02em;
 }
 
+.talk-card__meta a,
+.poster-card__meta a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+
+  &:hover {
+    color: #1d4ed8;
+  }
+}
+
 .talk-card__title,
 .poster-card__title {
   margin: 0 0 0.35em;
@@ -101,5 +112,14 @@ html[data-theme="dark"] {
   .talk-card__meta,
   .poster-card__meta {
     color: #86d0e0;
+  }
+
+  .talk-card__meta a,
+  .poster-card__meta a {
+    color: #a6c8ff;
+
+    &:hover {
+      color: #c2d9ff;
+    }
   }
 }

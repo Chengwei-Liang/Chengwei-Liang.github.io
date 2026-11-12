@@ -17,7 +17,7 @@ author_profile: true
     <article class="talk-card">
       <h3 class="talk-card__title">{{ talk.title }}</h3>
       <p class="talk-card__meta">
-        <span class="talk-card__venue">{{ talk.venue }}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
+        <span class="talk-card__venue">{% if talk.venue_url %}<a href="{{ talk.venue_url }}" target="_blank" rel="noopener">{{ talk.venue }}</a>{% else %}{{ talk.venue }}{% endif %}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
         <span class="talk-card__date">{{ talk.date | date: "%B %Y" }}</span>
       </p>
 
@@ -39,7 +39,7 @@ author_profile: true
       <article class="poster-card">
         <h3 class="poster-card__title">{{ poster.title }}</h3>
         <p class="poster-card__meta">
-          <span class="poster-card__venue">{{ poster.venue }}{% if poster.location %} &middot; {{ poster.location }}{% endif %}</span>
+          <span class="poster-card__venue">{% if poster.venue_url %}<a href="{{ poster.venue_url }}" target="_blank" rel="noopener">{{ poster.venue }}</a>{% else %}{{ poster.venue }}{% endif %}{% if poster.location %} &middot; {{ poster.location }}{% endif %}</span>
           <span class="poster-card__date">{{ poster.date | date: "%B %Y" }}</span>
         </p>
 
