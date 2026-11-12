@@ -19,7 +19,7 @@
   animation-delay: 0.45s;
 
   @include breakpoint($large) {
-    padding: 2.5em 0 3.5em;
+    padding: 2em 0 3.5em;
   }
 }
 
@@ -48,7 +48,7 @@ html[data-theme="dark"] .home-page {
 }
 
 .home-page__welcome {
-  margin: 0 0 0.15em;
+  margin: 0 0 0.55em;
   color: var(--home-heading-color);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
   font-weight: 800;
@@ -66,7 +66,7 @@ html[data-theme="dark"] .home-page {
 }
 
 .home-page__role {
-  margin: 0 0 1.85em;
+  margin: 0 0 2.5em;
   color: var(--home-muted-color);
   font-size: 0.8rem;
   font-weight: 600;
@@ -98,13 +98,13 @@ html[data-theme="dark"] .home-page {
 }
 
 .home-page__divider {
-  margin: 1.9em 0 1.55em;
+  margin: 1.55em 0 1.3em;
   border: 0;
   border-top: 1px solid var(--global-border-color);
 }
 
 .home-page__contact-title {
-  margin: 0 0 0.9em;
+  margin: 0 0 0.8em;
   color: var(--home-heading-color);
   font-size: 1.45rem;
   font-weight: 700;
@@ -117,14 +117,14 @@ html[data-theme="dark"] .home-page {
   padding: 0;
   list-style: none;
   color: var(--home-body-color);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 
   li {
     display: flex;
     align-items: center;
     gap: 0.65em;
-    margin: 0 0 0.75em;
+    margin: 0 0 0.65em;
   }
 
   li:last-child {
