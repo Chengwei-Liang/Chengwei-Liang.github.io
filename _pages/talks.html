@@ -1,16 +1,52 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Posters"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+{% assign talks = site.talks | where: "type", "Talk" | sort: "date" %}
+{% assign posters = site.talks | where: "type", "Poster" | sort: "date" %}
 
-{% endif %}
+<div class="talks-page">
+  <h2 class="talks-page__heading">Talks <span class="talks-page__count">{{ talks | size }} talks</span></h2>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  {% for talk in talks %}
+    <article class="talk-card">
+      <p class="talk-card__meta">
+        <span class="talk-card__date">{{ talk.date | date: "%B %Y" }}</span>
+        <span class="talk-card__venue">{{ talk.venue }}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
+      </p>
+      <h3 class="talk-card__title">{{ talk.title }}</h3>
+
+      {% if talk.pdf %}
+        <div class="talk-card__embed">
+          <iframe src="{{ base_path }}{{ talk.pdf }}#view=Fit&amp;navpanes=0" title="{{ talk.title | escape }}" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="talk-card__actions">
+          <a href="{{ base_path }}{{ talk.pdf }}" target="_blank" rel="noopener">Open slides in a new tab &rarr;</a>
+        </p>
+      {% endif %}
+    </article>
+  {% endfor %}
+
+  <h2 class="talks-page__heading">Posters <span class="talks-page__count">{{ posters | size }} posters</span></h2>
+
+  <div class="poster-list">
+    {% for poster in posters %}
+      <article class="poster-card">
+        <p class="poster-card__meta">
+          <span>{{ poster.date | date: "%B %Y" }}</span>
+          <span>{{ poster.venue }}{% if poster.location %} &middot; {{ poster.location }}{% endif %}</span>
+        </p>
+        <h3 class="poster-card__title">{{ poster.title }}</h3>
+
+        {% if poster.pdf %}
+          <a class="btn poster-card__link" href="{{ base_path }}{{ poster.pdf }}" target="_blank" rel="noopener">View poster (PDF)</a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>
