@@ -9,4 +9,4 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am Chengwei Liang, a senior Astronomy undergraduate student at Guangzhou University with about three years of research experience in fast radio bursts (FRBs). I am a member of [FAST FRB Key Science Project (KSP)](https://frb.bao.ac.cn/#) and CRAFT collaborations. My work focuses on FRB observations and large-sample analysis.
+Hi! I am **Chengwei Liang**, a senior Astronomy undergraduate student at Guangzhou University with about three years of research experience in **fast radio bursts (FRBs)**. I am a member of FAST FRB KSP Collaborations and ASKAP CRAFT Collaborations. My interests focus on FRB & Pulsar observations and ML/DL in the development of FRB classification and searching pipeline.

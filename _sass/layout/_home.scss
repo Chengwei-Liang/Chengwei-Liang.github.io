@@ -140,12 +140,13 @@ html[data-theme="dark"] .home-page {
   }
 
   a {
-    color: inherit;
-    text-decoration: none;
+    color: var(--global-link-color);
+    text-decoration: underline;
+    text-decoration-color: currentColor; 
+    text-underline-offset: 0.15em;
 
     &:hover {
-      color: var(--global-link-color);
-      text-decoration: underline;
+      color: var(--global-link-color-hover);
     }
   }
 }
