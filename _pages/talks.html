@@ -15,11 +15,11 @@ author_profile: true
 
   {% for talk in talks %}
     <article class="talk-card">
-      <p class="talk-card__meta">
-        <span class="talk-card__date">{{ talk.date | date: "%B %Y" }}</span>
-        <span class="talk-card__venue">{{ talk.venue }}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
-      </p>
       <h3 class="talk-card__title">{{ talk.title }}</h3>
+      <p class="talk-card__meta">
+        <span class="talk-card__venue">{{ talk.venue }}{% if talk.location %} &middot; {{ talk.location }}{% endif %}</span>
+        <span class="talk-card__date">{{ talk.date | date: "%B %Y" }}</span>
+      </p>
 
       {% if talk.pdf %}
         <div class="talk-card__embed">

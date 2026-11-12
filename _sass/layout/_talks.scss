@@ -34,18 +34,33 @@
   flex-wrap: wrap;
   gap: 0.3em 1em;
   margin: 0 0 0.4em;
-  color: var(--global-text-color-light);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+.talk-card__meta {
+  color: #1f7a8c;
+  margin-bottom: 0.9em;
+}
+
+.poster-card__meta {
+  color: var(--global-text-color-light);
+}
+
 .talk-card__title,
 .poster-card__title {
-  margin: 0 0 0.75em;
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.4;
+}
+
+.talk-card__title {
+  margin: 0 0 0.35em;
+}
+
+.poster-card__title {
+  margin: 0 0 0.8em;
 }
 
 /* Both talk PDFs are 16:9 slides, so the frame matches one page */
@@ -102,5 +117,12 @@
 
   &__link {
     text-decoration: none;
+  }
+}
+
+/* Match the program detail colors in the dark theme */
+html[data-theme="dark"] {
+  .talk-card__meta {
+    color: #86d0e0;
   }
 }
