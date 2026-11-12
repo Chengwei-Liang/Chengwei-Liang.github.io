@@ -37,11 +37,11 @@ author_profile: true
   <div class="poster-list">
     {% for poster in posters %}
       <article class="poster-card">
-        <p class="poster-card__meta">
-          <span>{{ poster.date | date: "%B %Y" }}</span>
-          <span>{{ poster.venue }}{% if poster.location %} &middot; {{ poster.location }}{% endif %}</span>
-        </p>
         <h3 class="poster-card__title">{{ poster.title }}</h3>
+        <p class="poster-card__meta">
+          <span class="poster-card__venue">{{ poster.venue }}{% if poster.location %} &middot; {{ poster.location }}{% endif %}</span>
+          <span class="poster-card__date">{{ poster.date | date: "%B %Y" }}</span>
+        </p>
 
         {% if poster.pdf %}
           <a class="btn poster-card__link" href="{{ base_path }}{{ poster.pdf }}" target="_blank" rel="noopener">View poster (PDF)</a>
