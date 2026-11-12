@@ -93,3 +93,14 @@
     font-size: 0.80rem;
   }
 }
+
+/* Lighten the program colors for the dark theme */
+html[data-theme="dark"] {
+  .program__id {
+    color: #d3dde5;
+  }
+
+  .program__details {
+    color: #86d0e0;
+  }
+}
