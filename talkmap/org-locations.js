@@ -1,22 +1,22 @@
 var addressPoints = [
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Unraveling the Spectro-polarimetric Difference of Repeating and Non-repeating FRBs<br />FAST/Future Pulsar Symposium 15; Guiyang, China",
+    26.5878031,
+    106.7086936
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Unraveling the polarimetric difference of Repeating and Non-repeating FRBs<br />Australasian \"Orange\" Pulsar Workshop 2026; Australia",
+    -24.7761086,
+    134.755
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Unraveling the Spectro-polarimetric Difference of Repeating and Non-repeating FRBs<br />FRB2026; Guiyang, China",
+    26.5878031,
+    106.7086936
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536923,
-    -118.2427676
+    "A targeted search for fast radio bursts from a radio source with likely magnetar origin<br />Symposium on Fast Radio Bursts and Their Astrophysics; Beijing, China",
+    39.9057136,
+    116.3912972
   ]
 ];
