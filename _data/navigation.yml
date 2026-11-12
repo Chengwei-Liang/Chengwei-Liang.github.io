@@ -9,13 +9,10 @@
 
 main:
   - title: "Observational programs"
-    url: /observational programs/
+    url: /observational-programs/
 
   - title: "Talks & Poster"
     url: /talks/   
-
-  - title: "Publications"
-    url: /publications/
 
   - title: "CV"
     url: /cv/
