@@ -23,19 +23,19 @@ author_profile: true
     <article class="program program--co">
       <div class="program__head">
         <span class="program__role program__role--co">Co-I</span>
-        <span class="program__id">PT2025_0015</span>
+        <span class="program__id">PT2026_0196</span>
       </div>
-      <h3 class="program__title">Depicting the dynamic environment of FRB 20180301A with FAST</h3>
-      <p class="program__details"><span>10 hours</span><span>2025 &ndash; 2026</span></p>
+      <h3 class="program__title">Observing a peculiar radio transient with FAST</h3>
+      <p class="program__details"><span>3 hours</span><span>2026 &ndash; 2027</span></p>
     </article>
 
     <article class="program program--co">
       <div class="program__head">
         <span class="program__role program__role--co">Co-I</span>
-        <span class="program__id">PT2026_0196</span>
+        <span class="program__id">PT2025_0015</span>
       </div>
-      <h3 class="program__title">Observing a peculiar radio transient with FAST</h3>
-      <p class="program__details"><span>3 hours</span><span>2026 &ndash; 2027</span></p>
+      <h3 class="program__title">Depicting the dynamic environment of FRB 20180301A with FAST</h3>
+      <p class="program__details"><span>10 hours</span><span>2025 &ndash; 2026</span></p>
     </article>
 
     <article class="program program--co">
@@ -66,7 +66,7 @@ author_profile: true
         <span class="program__id">PX153 (ToO)</span>
       </div>
       <h3 class="program__title">Follow-up of FRB 20180301A</h3>
-      <p class="program__details"><span>21.5 hours</span><span>2026APR</span></p>
+      <p class="program__details"><span>21.5 hours</span><span>Apr. 2026</span></p>
     </article>
 
     <article class="program program--pi">

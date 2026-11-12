@@ -7,8 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign talks = site.talks | where: "type", "Talk" | sort: "date" %}
-{% assign posters = site.talks | where: "type", "Poster" | sort: "date" %}
+{% assign talks = site.talks | where: "type", "Talk" | sort: "date" | reverse %}
+{% assign posters = site.talks | where: "type", "Poster" | sort: "date" | reverse %}
 
 <div class="talks-page">
   <h2 class="talks-page__heading">Talks <span class="talks-page__count">{{ talks | size }} talks</span></h2>
