@@ -19,5 +19,3 @@ redirect_from:
     <p>Your browser does not support embedded PDFs. You can <a href="{{ base_path }}/CV_Chengwei_Liang.pdf">download the CV here</a>.</p>
   </iframe>
 </div>
-
-<p class="cv-note">If the PDF does not display, <a href="{{ base_path }}/CV_Chengwei_Liang.pdf" target="_blank" rel="noopener">download the CV here</a>.</p>
