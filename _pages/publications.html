@@ -5,32 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<ol class="pub-list">
+  <li><strong>Chengwei Liang</strong>, Shiqian Zhao, Rui Luo, Yuanpei Yang, et al., <em>Targeted Search for Fast Radio Bursts from the Young Pulsar Wind Nebula Candidate VT 1137&minus;0337</em>, manuscript in preparation, <a href="https://drive.google.com/file/d/1CFLUNMBwmdBjMRbxJiuCq_92P5YqzOGl/preview" target="_blank" rel="noopener">PDF</a>.</li>
 
-{% include base_path %}
+  <li>Junshuo Zhang, Yongkun Zhang, Yi Feng, <strong>Chengwei Liang</strong>, Shuo Cao, et al., <em>Detection of high activity from repeating FRB 20121102A at L-band with FAST</em>, <a href="https://www.astronomerstelegram.org/?read=17642" target="_blank" rel="noopener">ATel #17642</a>.</li>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  <li>Junshuo Zhang, Dejiang Zhou, Yi Feng, <strong>Chengwei Liang</strong>, Chenyuan Xu, et al., <em>FRB 20121102A is exhibiting hyperactivity with increased RM value at L-band detected by FAST</em>, <a href="https://www.astronomerstelegram.org/?read=17921" target="_blank" rel="noopener">ATel #17921</a>.</li>
 
+  <li>S. Q. Zhao, X. C. Wu, R. Luo, S. Q. Wang, et al. (including <strong>Chengwei Liang</strong>), <em>Magnetic dipolar geometry unveiled from a long-period radio pulsar</em>, <a href="https://discovery.researcher.life/article/magnetic-dipolar-geometry-unveiled-from-a-long-period-radio-pulsar/d088e19572e831c182832ec01811f118" target="_blank" rel="noopener">preprint</a>.</li>
 
+  <li>Jiarui Niu, Xiaohui Liu, Nan Xu, Songyu Shen, et al. (including <strong>Chengwei Liang</strong>), <em>No Strong Evidence for Plasma Lensing in FRB 20240114A</em>, 2026, <a href="https://arxiv.org/abs/2607.02939" target="_blank" rel="noopener">arXiv:2607.02939</a>, ApJL (accepted).</li>
 
+  <li>Xiaohui Liu, Jiarui Niu, Tiancong Wang, Jun-Shuo Zhang, et al. (including <strong>Chengwei Liang</strong>), <em>Random Polarization Position Angle Behaviors across Bursts of Repeating Fast Radio Bursts</em>, 2026, <a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1006..157L/abstract" target="_blank" rel="noopener">ApJ, 1006, 157</a>.</li>
+</ol>
