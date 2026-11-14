@@ -12,16 +12,16 @@ My research focuses on fast radio bursts (FRBs), one of the most enigmatic class
   <figcaption>Credit: van Leeuwen/ASTRON</figcaption>
 </figure>
 
-### Observational Studies of FRBs
+## Observational Studies of FRBs
 
 FRBs are millisecond-duration bursts of coherent radio emission, but their physical origin remains an open question. Their dispersion measures (DMs) and rotation measures (RMs) provide information about the ionized and magnetized environments around the sources. Long-term monitoring of repeating FRBs therefore allow us to study changes in their local environment over time.
 
-### FRB Progenitors and Persistent Radio Sources
+## FRB Progenitors and Persistent Radio Sources
 Some FRBs are associated with persistent radio sources (PRSs), which are compact and luminous radio sources that may be related to young magnetars or supernova remnants. However, the physical connection between PRSs and FRBs is still not well understood. Studying nearby PRS-like sources can help us investigate whether these sources are also capable of producing FRBs.
 
 We carried out 98 hours of observations of VT 1137−0337, a PRS-like source, using FAST and Parkes. No FRB-like bursts were detected. I was responsible for interpreting the non-detection and its implications for the possible connection between PRSs and FRBs.
 
-### Classification of Repeating and Non-repeating FRBs
+## Classification of Repeating and Non-repeating FRBs
 
 Whether repeating and apparently non-repeating FRBs belong to the same population or represent different types of sources remains an open questions. Most studies have compared their dynamic spectra, while polarization provides another way to investigate possible differences between the two populations.
 
