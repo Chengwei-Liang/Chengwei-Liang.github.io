@@ -7,6 +7,11 @@ author_profile: true
 
 My research focuses on fast radio bursts (FRBs), one of the most enigmatic classes of radio transients. I use radio observations, polarization analysis, and machine learning to investigate how they are produced, where they live, and why some of them repeat.
 
+<figure class="research-figure">
+  <img src="/images/FRB.jpg" alt="Artist's impression of a fast radio burst, with radio telescope dishes, a host galaxy and a magnetar.">
+  <figcaption>Credit: van Leeuwen/ASTRON</figcaption>
+</figure>
+
 ### Observational Studies of FRBs
 
 FRBs are millisecond-duration bursts of coherent radio emission, but their physical origin remains an open question. Their dispersion measures (DMs) and rotation measures (RMs) provide information about the ionized and magnetized environments around the sources. Long-term monitoring of repeating FRBs therefore allow us to study changes in their local environment over time.
