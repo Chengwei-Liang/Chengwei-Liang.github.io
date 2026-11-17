@@ -2,7 +2,7 @@
   --ink: #1a1d21;
   --muted: #6b7280;
   --line: #e5e7eb;
-  --soft: #f5f6f7;
+  --paper-bg: #eef0f2;
   --accent: #2f7f93;
   --bg: #ffffff;
 }
@@ -19,17 +19,21 @@ body {
 
 body {
   color: var(--ink);
-  background: var(--bg);
+  background: var(--paper-bg);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
 
 .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1em;
   padding: 0.8em 1.25em;
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
   font-size: 0.85rem;
 }
@@ -72,70 +76,9 @@ h1 {
   font-size: 0.8rem;
 }
 
-.toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5em;
-  margin-bottom: 1em;
-}
-
-.toolbar button {
-  padding: 0.42em 0.75em;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--bg);
-  color: var(--ink);
-  font: inherit;
-  font-size: 0.82rem;
-  cursor: pointer;
-}
-
-.toolbar button:hover:not(:disabled) {
-  background: var(--soft);
-}
-
-.toolbar button:disabled {
-  opacity: 0.4;
-  cursor: default;
-}
-
-.page-info {
-  min-width: 6.5em;
-  color: var(--muted);
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-.canvas-wrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  min-height: 320px;
-  padding: 1em;
-  overflow: auto;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-canvas {
-  display: none;
-  flex: 0 0 auto;
-  height: auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-}
-
 .loading,
 .error {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
+  margin: 1.5em 0;
   color: var(--muted);
   font-size: 0.9rem;
   text-align: center;
@@ -143,6 +86,28 @@ canvas {
 
 .error {
   color: #b91c1c;
+}
+
+.pages {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pdf-page {
+  width: 100%;
+  margin: 0 auto 1.25em;
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-page canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 @media (max-width: 600px) {
@@ -154,8 +119,8 @@ canvas {
     font-size: 1.15rem;
   }
 
-  .canvas-wrap {
-    padding: 0.5em;
+  .pdf-page {
+    margin-bottom: 0.75em;
   }
 }
 
