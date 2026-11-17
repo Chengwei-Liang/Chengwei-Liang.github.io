@@ -145,13 +145,6 @@ canvas {
   color: #b91c1c;
 }
 
-.note {
-  margin-top: 1em;
-  color: var(--muted);
-  font-size: 0.75rem;
-  text-align: center;
-}
-
 @media (max-width: 600px) {
   .paper {
     padding: 1.25em 0.75em 2em;
