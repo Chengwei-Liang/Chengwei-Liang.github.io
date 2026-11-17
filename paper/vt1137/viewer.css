@@ -1,0 +1,173 @@
+:root {
+  --ink: #1a1d21;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --soft: #f5f6f7;
+  --accent: #2f7f93;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 0.8em 1.25em;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+
+.topbar a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+.topbar .home {
+  color: var(--muted);
+}
+
+.paper {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 2em 1.25em 3em;
+}
+
+h1 {
+  margin: 0 0 0.4em;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.authors {
+  margin: 0 0 0.3em;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.meta {
+  margin: 0 0 1.6em;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.toolbar button {
+  padding: 0.42em 0.75em;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.toolbar button:hover:not(:disabled) {
+  background: var(--soft);
+}
+
+.toolbar button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.page-info {
+  min-width: 6.5em;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.canvas-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 320px;
+  padding: 1em;
+  overflow: auto;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+canvas {
+  display: none;
+  flex: 0 0 auto;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.loading,
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.note {
+  margin-top: 1em;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .paper {
+    padding: 1.25em 0.75em 2em;
+  }
+
+  h1 {
+    font-size: 1.15rem;
+  }
+
+  .canvas-wrap {
+    padding: 0.5em;
+  }
+}
+
+@media print {
+  body {
+    display: none !important;
+  }
+}
